@@ -8,14 +8,20 @@ int checknum(char p)
 	else return 0;
 }
 
-int checkop(char p)
+int checkop(char operator)
 {
 
-	if(p=='+'|| p=='-'|| p=='*'|| p=='/'|| p=='%'|| p=='^')
-	return 1;
+	switch(operator)
+	{
+		case '+': /* Fall Through*/
+		case '-': /* Fall Through*/
+		case '*': /* Fall Through*/
+		case '/': /* Fall Through*/
+		case '%': /* Fall Through*/
+		case '^': return 1;
+		default : return 0;
+	}
 
-	else return 0; //{printf("Error:Undefined arithmetic operator found in file\n");
-	//	exit(0);
 	
 }
 
