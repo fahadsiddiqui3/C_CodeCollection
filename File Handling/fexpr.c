@@ -77,23 +77,26 @@ main(int argc,char **argv)
 
 		switch(op)
 		{
-			case '+':		fprintf(fp2,"%d\n",sum1+sum2);
+			case '+':
+					fprintf(fp2,"%d\n",sum1+sum2);
 					break;
 		
 			case '-':
-				fprintf(fp2,"%d\n",sum1-sum2);
+					fprintf(fp2,"%d\n",sum1-sum2);
 					break;
 
 			case '*':
-				fprintf(fp2,"%d\n",sum1*sum2);
+					fprintf(fp2,"%d\n",sum1*sum2);
 					break;
 			
 			case '/':
-				fprintf(fp2,"%d\n",sum1/sum2);
+					fprintf(fp2,"%d\n",sum1/sum2);
 					break;
 
 			case '%':
-				fprintf(fp2,"%d\n",sum1%sum2);
+					fprintf(fp2,"%d\n",sum1%sum2);
+					break;
+			default : 
 					break;
 
 
