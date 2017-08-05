@@ -5,8 +5,8 @@ main(int argc,char **argv)
 	char ch;
 	if(argc<2)
 	{
-	printf("ERROR:file name not suplied\n");
-	printf("Usage:./fileRd<filename>\n");
+		printf("ERROR:file name not suplied\n");
+		printf("Usage:./fileRd<filename>\n");
 
 	}
 	ptr=fopen(argv[1],"r");
