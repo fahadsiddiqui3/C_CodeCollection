@@ -52,8 +52,10 @@ char** delete(char **p)
 	puts("Enter name to delete");
 	do{
 		nm2del=realloc(nm2del,cntt+sizeof(char));
-		nm2del[cntt++]=getchar();
-		
+		if(nm2del != NULL)
+			nm2del[cntt++]=getchar();
+		else
+			free(nm2del);
 
 		}while(nm2del[cntt-1]!=10);
 	nm2del[cntt-1]=0;
