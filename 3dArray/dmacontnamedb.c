@@ -62,7 +62,7 @@ return;
 }
 void search(char ***ptr)
 {
-	char *s;
+	char *s = 0 ;
 	int i,flag=0;
 	puts("Enter name to search");
 	getchar();
